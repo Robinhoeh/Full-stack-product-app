@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import productRoute from "./routes/product.route.js";
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 //middleware
 // json is not accepted by express by default
